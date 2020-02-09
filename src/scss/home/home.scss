@@ -1,0 +1,142 @@
+.body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffd788;
+}
+
+.pug__home {
+  position: absolute;
+  top: 30%;
+  width: 532px;
+  height: 327px;
+  left: 30%;
+  background-image: url("../../src/assets/pug_home.png");
+  animation: upAnddown 2s linear infinite;
+}
+
+.diag__buble {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 238px;
+  background-image: url("../../src/assets/buble_diag.png");
+  top: 10%;
+  left: 13%;
+  .dialogue {
+    font-size: 50px;
+    margin-bottom: 35px;
+    margin-left: 40px;
+  }
+}
+
+.perso {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  height: 200px;
+
+  top: 75%;
+  left: 15%;
+
+  .perso__celine {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 100%;
+
+    .perso__celine--photo {
+      margin-bottom: 10px;
+      width: 126px;
+      height: 138px;
+
+      background-image: url("../../src/assets/femme-icon.png");
+    }
+    .perso__celine--button {
+      width: 90%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .perso__chris {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 100%;
+    .perso__chris--photo {
+      width: 126px;
+      height: 138px;
+      margin-bottom: 10px;
+      background-image: url("../../src/assets/homme_icon.png");
+    }
+    .perso__chris--button {
+      width: 90%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .perso__mamou {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 100%;
+    .perso__mamou--photo {
+      width: 126px;
+      height: 138px;
+      margin-bottom: 10px;
+      background-image: url("../../src/assets/femme-icon.png");
+    }
+    .perso__mamou--button {
+      width: 90%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .perso__nico {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 100%;
+    .perso__nico--photo {
+      width: 126px;
+      margin-bottom: 10px;
+      height: 138px;
+      background-image: url("../../src/assets/homme_icon.png");
+    }
+    .perso__nico--button {
+      width: 90%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.button_next {
+  width: 300px;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  opacity: 0;
+  height: 300px;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_next:hover {
+  left: 75%;
+}
