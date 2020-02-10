@@ -1,0 +1,38 @@
+@keyframes leftright {
+  0% {
+    left: 30%;
+  }
+
+  25% {
+    left: 35%;
+  }
+  50% {
+    left: 30%;
+  }
+  75% {
+    left: 25%;
+  }
+  100% {
+    left: 30%;
+  }
+}
+@keyframes upAnddown_win {
+  0% {
+    top: 30%;
+  }
+
+  50% {
+    top: 38%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+.error {
+  animation: leftright 0.5s linear infinite;
+}
+
+.win {
+  animation: upAnddown_win 0.5s linear infinite;
+}

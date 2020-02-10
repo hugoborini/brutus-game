@@ -1,0 +1,89 @@
+.non {
+  position: absolute;
+  font-size: 30px;
+  left: 30px;
+  top: 70px;
+}
+
+.oui {
+  position: absolute;
+  font-size: 30px;
+  left: 30px;
+  top: 70px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.diag_game {
+  font-size: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.counter {
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+
+  .counter__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    font-size: 30px;
+  }
+  .counter__result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    font-size: 30px;
+  }
+  .counter__sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    font-size: 30px;
+  }
+}
+
+.send {
+  position: absolute;
+  top: 95%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 290px;
+  height: 30px;
+  border: solid;
+  font-size: 20px;
+}
+
+.heath-container {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  .health {
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    transition: 0.1s;
+  }
+}
