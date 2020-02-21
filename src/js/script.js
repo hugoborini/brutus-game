@@ -1,8 +1,26 @@
 import { nextTick, send } from "q";
 import { endianness } from "os";
-
+var score = 0;
+var minigame_button = document.querySelector(".minigame");
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
+}
+
+function check_score() {
+  if (score >= 3) {
+    minigame_button.classList.remove("hidden");
+  }
+}
+
+function score_display() {
+  var score_nb = document.querySelector(".score_nb");
+  var body = document.querySelector(".body-game");
+  console.log(body);
+
+  setInterval(() => {
+    score++;
+    score_nb.innerHTML = score;
+  }, 500);
 }
 
 function counter() {
@@ -32,6 +50,7 @@ function counter() {
     if (health_nb <= 0) {
       end();
     }
+    console.log("lose");
   }, 100);
 
   counter_add.addEventListener("click", function() {
@@ -126,6 +145,7 @@ function end() {
 function game() {
   oxo.screens.loadScreen("game", function() {
     counter();
+    score_display();
   });
 }
 

@@ -1,16 +1,29 @@
 .body {
   height: 100vh;
   width: 100vw;
-  background-color: #ffd788;
+  .body__img {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../src/assets/decor-game2.png");
+    background-size: cover;
+    filter: blur(3px);
+  }
+}
+
+.body__home {
+  height: 100vh;
+  width: 100vw;
+  background-color: tan;
 }
 
 .pug__home {
   position: absolute;
   top: 30%;
-  width: 532px;
-  height: 327px;
-  left: 30%;
-  background-image: url("../../src/assets/pug_home.png");
+  width: 451px;
+  height: 320px;
+  left: 35%;
+  background-image: url("../../src/assets/brut_final.png");
 }
 
 .diag__buble {
@@ -22,7 +35,7 @@
   height: 238px;
   background-image: url("../../src/assets/buble_diag.png");
   top: 10%;
-  left: 13%;
+  left: 20%;
   .dialogue {
     font-size: 50px;
     margin-bottom: 35px;
