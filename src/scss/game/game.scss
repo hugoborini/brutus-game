@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "splach";
+  src: url("../../src/assets/font/Splatch.ttf");
+}
+
 .non {
   position: absolute;
   font-size: 30px;
@@ -18,17 +23,24 @@
 
 .diag_game {
   font-size: 30px;
-  margin-left: 30px;
+  margin-right: 100px;
+  margin-left: 40px;
   margin-bottom: 20px;
+  border: solid;
+  width: 220px;
 }
 
 .counter {
   display: flex;
-  width: 50vw;
+  width: 510px;
+  height: 163px;
   justify-content: space-around;
   position: absolute;
   top: 80%;
-  left: 25%;
+  align-items: center;
+  left: 35%;
+  background-image: url("../../src/assets/oscompteur.png");
+  background-repeat: no-repeat;
 
   .counter__add {
     display: flex;
@@ -37,7 +49,6 @@
     outline: none;
     width: 100px;
     height: 100px;
-    border: solid;
     font-size: 30px;
   }
   .counter__result {
@@ -46,16 +57,24 @@
     align-items: center;
     width: 100px;
     height: 100px;
-    border: solid;
     font-size: 30px;
   }
   .counter__sub {
     display: flex;
     justify-content: center;
+    background-image: url("../../src/assets/courgettegame.png");
+    background-repeat: no-repeat;
     align-items: center;
     width: 100px;
     height: 100px;
-    border: solid;
+    font-size: 30px;
+  }
+  .counter__courge-resulte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
     font-size: 30px;
   }
 }
@@ -77,14 +96,15 @@
 .heath-container {
   position: absolute;
   margin-top: 20px;
-  margin-left: 30px;
-  width: 300px;
-  height: 50px;
-  background-color: white;
+  margin-left: 1700px;
+  width: 50px;
+  height: 300px;
+  background: linear-gradient(180deg, #7b7b7b 0%, rgba(255, 255, 255, 0) 100%),
+    #8585ac;
   .health {
-    width: 300px;
-    height: 50px;
-    background-color: blue;
+    width: 50px;
+    height: 300px;
+    background-color: #6b6969;
     transition: 0.1s;
   }
 }
@@ -105,4 +125,14 @@
   width: 100px;
   height: 100px;
   border: solid;
+}
+
+.brutus_win {
+  background-image: url("../../src/assets/brutuswin.png");
+  background-repeat: no-repeat;
+}
+
+.brutus_lose {
+  background-image: url("../../src/assets/brutuselose.png");
+  background-repeat: no-repeat;
 }

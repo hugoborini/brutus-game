@@ -31,15 +31,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 327px;
-  height: 238px;
-  background-image: url("../../src/assets/buble_diag.png");
+  font-family: "splach";
+  width: 437px;
+  height: 307px;
+  background-image: url("../../src/assets/diag_brutfinal.png");
   top: 10%;
+  z-index: 1;
   left: 20%;
   .dialogue {
-    font-size: 50px;
-    margin-bottom: 35px;
-    margin-left: 40px;
+    width: 150px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 100px;
   }
 }
 

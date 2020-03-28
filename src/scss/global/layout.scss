@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "splach";
+  src: url("../../src/assets/font/Bubblegum.ttf");
+}
+
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   cursor: url(../../src/assets/pate.png), pointer;
+  font-family: "splach";
 }
